@@ -6,7 +6,11 @@ interface DiscoveryProps {
 }
 
 const DiscoveryLayout = async ({ children, params }: DiscoveryProps) => {
-  return <main className='flex over-hidden h-screen'>{children}</main>
+  return (
+    <main className='flex over-hidden min-h-screen max-w-5xl m-auto justify-center'>
+      {children}
+    </main>
+  )
 }
 
 export default DiscoveryLayout
